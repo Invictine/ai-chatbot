@@ -8,3 +8,14 @@ An early full-stack chat prototype with a React interface and an Express API tha
 - [Backend](AI%20chatbot/backend) contains the TypeScript API. From that folder, run `npm install` then `npm run dev` for the compiler and development server.
 
 A working chat requires a separately configured MongoDB instance and OpenAI API access. This is an archived development snapshot using an older provider SDK. Review the backend configuration locally before connecting either service.
+## Architecture
+
+```mermaid
+flowchart LR
+  Visitor[Browser] --> React[Vite and React frontend]
+  React -->|Chat requests| API[Express and TypeScript backend]
+  API --> Mongo[MongoDB conversation store]
+  API --> OpenAI[OpenAI API]
+```
+
+The repository is an archived development snapshot. MongoDB and OpenAI access must be configured separately, and the older provider SDK and backend configuration need review before use.
