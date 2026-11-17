@@ -1,36 +1,14 @@
 # AI Chatbot
 
-> **Full-stack React, Express, and MongoDB conversational prototype.**
+Understanding end-to-end generative AI application flow is best learned through clean separation of concerns. This full-stack starter pairs a responsive React frontend with an Express API gateway and OpenAI model completions, persisting session histories in MongoDB. Includes streaming token responses, syntax-highlighted code blocks, and configurable system instructions. Fork the repository as a clean launchpad for domain-specific conversational assistants.
 
-[![AI Chatbot Architecture](media/overview.png)](media/walkthrough.mp4)
+[![AI Chatbot](media/overview.png)](media/walkthrough.mp4)
+*Click preview above to watch illustrated architecture overview.*
 
-*Click the preview card above to watch the architecture walkthrough.*
 
----
+## Explore the project
 
-## Why I Built This
+- [Frontend](AI%20chatbot/frontend) contains the Vite app and sign-in and chat views. From that folder, run `npm install` and `npm run dev`.
+- [Backend](AI%20chatbot/backend) contains the TypeScript API. From that folder, run `npm install` then `npm run dev` for the compiler and development server.
 
-Building conversational interfaces requires seamless synchronization between client-side optimistic rendering, streaming backend API proxies, and durable database persistence.
-
-This project implements a full-stack conversational prototype featuring a React frontend, an Express REST backend with model streaming, and a MongoDB document store for multi-session thread history.
-
-## Standout Features
-
-- **React Chat Canvas:** Responsive sidebar for thread switching and real-time message bubble rendering.
-- **Express Model Middleware:** Manages authentication tokens, prompt templates, and streaming model responses.
-- **MongoDB Session Persistence:** Durable storage of conversational history and user preferences.
-
-## Media
-
-- **Architecture Card:** `media/overview.png`
-- **Walkthrough Video:** `media/walkthrough.mp4`
-
-## Running Locally
-
-```bash
-# Backend
-cd backend && npm install && npm run dev
-
-# Frontend
-cd frontend && npm install && npm start
-```
+A working chat requires a separately configured MongoDB instance and OpenAI API access. This is an archived development snapshot using an older provider SDK. Review the backend configuration locally before connecting either service.
