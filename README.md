@@ -1,6 +1,6 @@
 # AI Chatbot
 
-Understanding end-to-end generative AI application flow is best learned through clean separation of concerns. This full-stack starter pairs a responsive React frontend with an Express API gateway and OpenAI model completions, persisting session histories in MongoDB. Includes streaming token responses, syntax-highlighted code blocks, and configurable system instructions. Fork the repository as a clean launchpad for domain-specific conversational assistants.
+An early full-stack chat prototype with a React interface and an Express API that stores conversations in MongoDB.
 
 [![AI Chatbot](media/overview.png)](media/walkthrough.mp4)
 *Click preview above to watch illustrated architecture overview.*
